@@ -7,10 +7,10 @@ describe('test/app/controller/rss.test.js', () => {
     const { config } = app;
     config.debug = false;
     const result1 = await app.httpRequest().get('/rss');
-    assert(result1.text.includes('跨境物流平台：跨境物流专业知识分享社区'));
+    assert(result1.text.includes('货代你问我答：跨境物流专业知识分享社区'));
 
     const result2 = await app.httpRequest().get('/rss');
-    assert(result2.text.includes('跨境物流平台：跨境物流专业知识分享社区'));
+    assert(result2.text.includes('货代你问我答：跨境物流专业知识分享社区'));
 
     config.rss = null;
     await app.httpRequest().get('/rss').expect(404);

@@ -4,9 +4,9 @@ const path = require('path');
 module.exports = appInfo => {
     const config = {};
 
-    config.name = '跨境物流平台';
+    config.name = '货代你问我答';
 
-    config.description = '跨境物流平台：跨境物流专业知识分享社区';
+    config.description = '货代你问我答：跨境物流专业知识分享社区';
 
     config.site_logo = '/public/images/cnodejs_light.svg';
 
@@ -43,10 +43,10 @@ module.exports = appInfo => {
 
     // RSS配置
     config.rss = {
-        title: '跨境物流平台：跨境物流专业知识分享社区',
+        title: '货代你问我答：跨境物流专业知识分享社区',
         link: 'http://cnodejs.org',
         language: 'zh-cn',
-        description: '跨境物流平台：跨境物流专业知识分享社区',
+        description: '货代你问我答：跨境物流专业知识分享社区',
         // 最多获取的RSS Item数量
         max_rss_items: 50,
     };

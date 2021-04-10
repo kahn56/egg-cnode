@@ -4,9 +4,9 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = 'CNode技术社区';
+  config.name = '跨境物流平台';
 
-  config.description = 'CNode：Node.js专业中文社区';
+  config.description = '跨境物流平台：跨境物流专业知识分享社区';
 
   config.site_logo = '/public/images/cnodejs_light.svg';
 
@@ -18,7 +18,7 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1519887194138_3450';
 
-  config.host = 'http://cnodejs.org';
+  config.host = 'http://qa.6-mi.com';
 
   config.session_secret = 'node_club_secret'; // 务必修改
 
@@ -39,14 +39,14 @@ module.exports = appInfo => {
   config.mini_assets = process.env.EGG_MINI_ASSETS || false;
 
   // 版块
-  config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
+  config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ]];
 
   // RSS配置
   config.rss = {
-    title: 'CNode：Node.js专业中文社区',
+    title: '跨境物流平台：跨境物流专业知识分享社区',
     link: 'http://cnodejs.org',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: '跨境物流平台：跨境物流专业知识分享社区',
     // 最多获取的RSS Item数量
     max_rss_items: 50,
   };
@@ -94,7 +94,8 @@ module.exports = appInfo => {
 
   config.auth_cookie_name = 'node_club';
   config.admins = {
-    ADMIN_USER: true,
+    // ADMIN_USER: true,
+    kehongpeng: true
   };
 
   config.siteFile = {
@@ -115,7 +116,7 @@ module.exports = appInfo => {
    * @see http://mongodb.github.io/node-mongodb-native/2.2/api/Db.html#createCollection
    */
   config.mongoose = {
-    url: process.env.EGG_MONGODB_URL || 'mongodb://127.0.0.1:27017/egg_cnode',
+    url: process.env.EGG_MONGODB_URL || 'mongodb:qa:8264ee52f589f4c0191aa94f87aa1aeb@//127.0.0.1:27017/qa',
     options: {
       server: { poolSize: 20 },
       reconnectTries: 10,
@@ -139,8 +140,8 @@ module.exports = appInfo => {
     host: 'smtp.126.com',
     port: 25,
     auth: {
-      user: 'club@126.com',
-      pass: 'club',
+      user: 'kehongpeng@126.com',
+      pass: 'FRQWDWDBOJFFIQZZ',
     },
     ignoreTLS: true,
   };

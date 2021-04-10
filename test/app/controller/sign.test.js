@@ -38,7 +38,7 @@ describe('test/app/controller/sign.test.js', () => {
       });
 
     assert(res.statusCode === 200);
-    assert(res.text.includes('欢迎加入 CNode技术社区！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号'));
+    assert(res.text.includes('欢迎加入 跨境物流平台社区！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号'));
   });
 
   it('should GET /active_account', async () => {

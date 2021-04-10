@@ -9,9 +9,9 @@ class MailService extends Service {
   async sendMail(data) {
     const { config, logger } = this;
 
-    if (config.debug) {
-      return;
-    }
+    // if (config.debug) {
+    //   return;
+    // }
 
     const transporter = mailer.createTransport(smtpTransport(config.mail_opts));
 
